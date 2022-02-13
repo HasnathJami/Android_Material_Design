@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonCheckBoxPractice">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the capital of Bangladesh?"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupId"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupId"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupId"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is the capital of Bangladesh?"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dhaka"
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chittagong" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb1Id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Human"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <CheckBox
+        android:id="@+id/cb2Id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        app:layout_constraintEnd_toEndOf="@+id/cb1Id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cb1Id"
+        app:layout_constraintTop_toBottomOf="@+id/cb1Id" />
+
+    <CheckBox
+        android:id="@+id/cb3Id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="None of them"
+        app:layout_constraintEnd_toEndOf="@+id/cb2Id"
+        app:layout_constraintStart_toStartOf="@+id/cb2Id"
+        app:layout_constraintTop_toBottomOf="@+id/cb2Id" />
+
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Show Score"
+        app:layout_constraintEnd_toEndOf="@+id/cb3Id"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/cb3Id"
+        app:layout_constraintTop_toBottomOf="@+id/cb3Id" />
+</androidx.constraintlayout.widget.ConstraintLayout>
